@@ -1,5 +1,5 @@
 /* Generated automatically by the program 'build/genpreds'
-   from the machine description file '../../gcc-linaro-4.8-2014.08/gcc/config/arm/arm.md'.  */
+   from the machine description file '../../gcc-linaro-4.8-2014.11/gcc/config/arm/arm.md'.  */
 
 #ifndef GCC_TM_PREDS_H
 #define GCC_TM_PREDS_H
@@ -171,6 +171,7 @@ enum constraint_num
   CONSTRAINT_Dt,
   CONSTRAINT_Ts,
   CONSTRAINT_Ua,
+  CONSTRAINT_Uh,
   CONSTRAINT_Ut,
   CONSTRAINT_Uv,
   CONSTRAINT_Uy,
