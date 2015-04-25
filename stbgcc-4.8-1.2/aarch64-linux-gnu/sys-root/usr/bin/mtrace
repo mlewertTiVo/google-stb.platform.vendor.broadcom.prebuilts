@@ -22,7 +22,7 @@ eval "exec /usr/bin/perl -S $0 $@"
 
 $VERSION = "2.18-2013.10";
 $PKGVERSION = "(EGLIBC) ";
-$REPORT_BUGS_TO = '<file:///opt/toolchains/stbgcc-4.8-1.1/info/README.Bugs>';
+$REPORT_BUGS_TO = '<file:///opt/toolchains/stbgcc-4.8-1.2/info/README.Bugs>';
 $progname = $0;
 
 sub usage {

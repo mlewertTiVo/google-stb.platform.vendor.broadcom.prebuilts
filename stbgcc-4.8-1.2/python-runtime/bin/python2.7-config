@@ -1,4 +1,4 @@
-#!/home/vagrant/rpmbuild/BUILD/build-toolchain/opt/toolchains/stbgcc-4.8-1.1/python-runtime/bin/python2.7
+#!/home/vagrant/rpmbuild/BUILD/build-toolchain/opt/toolchains/stbgcc-4.8-1.2/python-runtime/bin/python2.7
 
 import sys
 import os

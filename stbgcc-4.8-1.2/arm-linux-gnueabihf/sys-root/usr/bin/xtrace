@@ -55,7 +55,7 @@ short options.
 
 "
   printf $"For bug reporting instructions, please see:\\n%s.\\n" \
-    "<file:///opt/toolchains/stbgcc-4.8-1.1/info/README.Bugs>"
+    "<file:///opt/toolchains/stbgcc-4.8-1.2/info/README.Bugs>"
   exit 0
 }
 
