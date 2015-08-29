@@ -1,7 +1,7 @@
 This is doc/cpp.info, produced by makeinfo version 4.13 from
-../../gcc-linaro-4.8-2014.11/gcc/doc/cpp.texi.
+../../gcc-linaro-4.8-2015.06/gcc/doc/cpp.texi.
 
-Copyright (C) 1987-2013 Free Software Foundation, Inc.
+Copyright (C) 1987-2015 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3 or
@@ -132,7 +132,7 @@ Obsolete Features
 
 * Obsolete Features::
 
-   Copyright (C) 1987-2013 Free Software Foundation, Inc.
+   Copyright (C) 1987-2015 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3 or
@@ -2145,6 +2145,10 @@ double underscores.
 `__SSP_ALL__'
      This macro is defined, with value 2, when `-fstack-protector-all'
      is in use.
+
+`__SSP_STRONG__'
+     This macro is defined, with value 3, when
+     `-fstack-protector-strong' is in use.
 
 `__SANITIZE_ADDRESS__'
      This macro is defined, with value 1, when `-fsanitize=address' is
@@ -5546,51 +5550,51 @@ Node: Variadic Macros61120
 Node: Predefined Macros65907
 Node: Standard Predefined Macros66495
 Node: Common Predefined Macros72337
-Node: System-specific Predefined Macros89960
-Node: C++ Named Operators91983
-Node: Undefining and Redefining Macros92947
-Node: Directives Within Macro Arguments95051
-Node: Macro Pitfalls96599
-Node: Misnesting97132
-Node: Operator Precedence Problems98244
-Node: Swallowing the Semicolon100110
-Node: Duplication of Side Effects102133
-Node: Self-Referential Macros104316
-Node: Argument Prescan106725
-Node: Newlines in Arguments110479
-Node: Conditionals111430
-Node: Conditional Uses113260
-Node: Conditional Syntax114618
-Node: Ifdef114938
-Node: If118099
-Node: Defined120403
-Node: Else121686
-Node: Elif122256
-Node: Deleted Code123545
-Node: Diagnostics124792
-Node: Line Control126339
-Node: Pragmas130143
-Node: Other Directives134899
-Node: Preprocessor Output135949
-Node: Traditional Mode139150
-Node: Traditional lexical analysis140208
-Node: Traditional macros142711
-Node: Traditional miscellany146513
-Node: Traditional warnings147510
-Node: Implementation Details149707
-Node: Implementation-defined behavior150328
-Ref: Identifier characters151080
-Node: Implementation limits154158
-Node: Obsolete Features156832
-Node: Differences from previous versions159720
-Node: Invocation163928
-Ref: Wtrigraphs168380
-Ref: dashMF173155
-Ref: fdollars-in-identifiers182886
-Node: Environment Variables192755
-Node: GNU Free Documentation License195721
-Node: Index of Directives220885
-Node: Option Index222965
-Node: Concept Index229368
+Node: System-specific Predefined Macros90068
+Node: C++ Named Operators92091
+Node: Undefining and Redefining Macros93055
+Node: Directives Within Macro Arguments95159
+Node: Macro Pitfalls96707
+Node: Misnesting97240
+Node: Operator Precedence Problems98352
+Node: Swallowing the Semicolon100218
+Node: Duplication of Side Effects102241
+Node: Self-Referential Macros104424
+Node: Argument Prescan106833
+Node: Newlines in Arguments110587
+Node: Conditionals111538
+Node: Conditional Uses113368
+Node: Conditional Syntax114726
+Node: Ifdef115046
+Node: If118207
+Node: Defined120511
+Node: Else121794
+Node: Elif122364
+Node: Deleted Code123653
+Node: Diagnostics124900
+Node: Line Control126447
+Node: Pragmas130251
+Node: Other Directives135007
+Node: Preprocessor Output136057
+Node: Traditional Mode139258
+Node: Traditional lexical analysis140316
+Node: Traditional macros142819
+Node: Traditional miscellany146621
+Node: Traditional warnings147618
+Node: Implementation Details149815
+Node: Implementation-defined behavior150436
+Ref: Identifier characters151188
+Node: Implementation limits154266
+Node: Obsolete Features156940
+Node: Differences from previous versions159828
+Node: Invocation164036
+Ref: Wtrigraphs168488
+Ref: dashMF173263
+Ref: fdollars-in-identifiers182994
+Node: Environment Variables192863
+Node: GNU Free Documentation License195829
+Node: Index of Directives220993
+Node: Option Index223073
+Node: Concept Index229476
 
 End Tag Table

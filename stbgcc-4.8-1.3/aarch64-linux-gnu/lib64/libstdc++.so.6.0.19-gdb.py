@@ -19,8 +19,8 @@ import gdb
 import os
 import os.path
 
-pythondir = '/opt/toolchains/stbgcc-4.8-1.2/share/gcc-4.8.4/python'
-libdir = '/opt/toolchains/stbgcc-4.8-1.2/aarch64-linux-gnu/lib/../lib64'
+pythondir = '/opt/toolchains/stbgcc-4.8-1.3/share/gcc-4.8.5/python'
+libdir = '/opt/toolchains/stbgcc-4.8-1.3/aarch64-linux-gnu/lib/../lib64'
 
 # This file might be loaded when there is no current objfile.  This
 # can happen if the user loads it manually.  In this case we don't
