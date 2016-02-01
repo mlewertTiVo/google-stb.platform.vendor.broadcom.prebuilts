@@ -1,0 +1,5 @@
+#!/home/vagrant/rpmbuild/BUILD/build-toolchain/opt/toolchains/stbgcc-4.8-1.1/python-runtime/bin/python2.7
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()
