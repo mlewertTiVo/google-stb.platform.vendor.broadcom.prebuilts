@@ -93,7 +93,7 @@ MACHDEP=	linux2
 MULTIARCH=	
 
 # Install prefix for architecture-independent files
-prefix=		/home/vagrant/rpmbuild/BUILD/build-toolchain/opt/toolchains/stbgcc-4.8-1.2/python-runtime
+prefix=		/home/vagrant/rpmbuild/BUILD/build-toolchain/opt/toolchains/stbgcc-4.8-1.3/python-runtime
 
 # Install prefix for architecture-dependent files
 exec_prefix=	${prefix}
@@ -152,7 +152,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 'ac_cv_host=i686-unknown-linux-gnu' '--prefix=/home/vagrant/rpmbuild/BUILD/build-toolchain/opt/toolchains/stbgcc-4.8-1.2/python-runtime' 'CC=/opt/lsb/bin/lsbcc --lsb-libtool-fixups -nostdinc -isystem /usr/lib/gcc/i686-linux-gnu/4.6/include -isystem /usr/lib/gcc/i686-linux-gnu/4.6/include-fixed ' 'CFLAGS=-Os -isystem /opt/lsb/include'
+CONFIG_ARGS=	 'ac_cv_host=i686-unknown-linux-gnu' '--prefix=/home/vagrant/rpmbuild/BUILD/build-toolchain/opt/toolchains/stbgcc-4.8-1.3/python-runtime' 'CC=/opt/lsb/bin/lsbcc --lsb-libtool-fixups -nostdinc -isystem /usr/lib/gcc/i686-linux-gnu/4.6/include -isystem /usr/lib/gcc/i686-linux-gnu/4.6/include-fixed ' 'CFLAGS=-Os -isystem /opt/lsb/include'
 
 
 # Subdirectories with code
