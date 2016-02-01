@@ -1,3 +1,6 @@
+%define debug_package %{nil}
+BuildRequires: -rpmlint-mini -rpmlint-tizen
+
 Name:       stbgcc
 Summary:    STB gcc cross-compiler
 Version:    4.8.1.4
