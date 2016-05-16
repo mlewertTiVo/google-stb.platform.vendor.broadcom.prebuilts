@@ -25,7 +25,9 @@ PRODUCT_PACKAGES := \
     GoogleContactsSyncAdapter \
     GoogleFeedback \
     GoogleOneTimeInitializer \
-    GoogleJapaneseInput-release-preinstall \
+    GoogleHindiIME \
+    GoogleJapaneseInput \
+    GooglePackageInstaller \
     GooglePinyinIME \
     GoogleZhuyinIME \
     GooglePartnerSetup \
@@ -35,7 +37,6 @@ PRODUCT_PACKAGES := \
     LeanbackLauncher \
     LeanbackIme \
     Music2Pano \
-    NetworkLocationProvider \
     NoTouchAuthDelegate \
     PrebuiltGmsCorePano \
     PhoneskyKamikazeCanvas \
@@ -46,21 +47,16 @@ PRODUCT_PACKAGES := \
     SetupWraith \
     talkback \
     TV \
-    TvVoiceInput \
     VideosPano \
     WebViewGoogle \
     YouTubeLeanback
 
-# Overlay for Google network and fused location providers
+# Overlay for GMS devices
+$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/sample/products/location_overlay.mk)
+PRODUCT_PACKAGE_OVERLAYS := vendor/google_archer/gms/google/products/gms_overlay
 
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
      ro.setupwizard.mode=OPTIONAL \
-     ro.com.google.gmsversion=5.1_r2
-
-# Disable building webviewchromium from source
-PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
-
-# GMS-specific webview overlay
-PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+     ro.com.google.gmsversion=6.0_r1
