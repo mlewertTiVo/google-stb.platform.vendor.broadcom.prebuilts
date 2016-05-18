@@ -54,7 +54,7 @@ PRODUCT_PACKAGES := \
 # Overlay for GMS devices
 $(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/sample/products/location_overlay.mk)
-PRODUCT_PACKAGE_OVERLAYS := vendor/google_archer/gms/google/products/gms_overlay
+PRODUCT_PACKAGE_OVERLAYS := vendor/broadcom/prebuilts/gms/google/products/gms_overlay
 
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
