@@ -59,4 +59,8 @@ PRODUCT_PACKAGE_OVERLAYS := vendor/broadcom/prebuilts/gms/google/products/gms_ov
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
      ro.setupwizard.mode=OPTIONAL \
-     ro.com.google.gmsversion=6.0_r1
+     ro.com.google.gmsversion=6.0_r2
+
+# Configuration files for GMS apps
+PRODUCT_COPY_FILES += \
+     vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
