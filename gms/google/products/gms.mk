@@ -19,13 +19,15 @@ PRODUCT_PACKAGES := \
     AtvRemoteService \
     Backdrop \
     CanvasPackageInstaller \
+    GooglePackageInstaller \
     FrameworkPackageStubs \
     GoogleBackupTransport \
     GoogleCalendarSyncAdapter \
     GoogleContactsSyncAdapter \
     GoogleFeedback \
     GoogleOneTimeInitializer \
-    GoogleJapaneseInput-release-preinstall \
+    GoogleHindiIME \
+    GoogleJapaneseInput \
     GooglePinyinIME \
     GoogleZhuyinIME \
     GooglePartnerSetup \
@@ -38,29 +40,34 @@ PRODUCT_PACKAGES := \
     NetworkLocationProvider \
     NoTouchAuthDelegate \
     PrebuiltGmsCorePano \
-    PhoneskyKamikazeCanvas \
     PlayGamesPano \
     Pumpkin \
+    RecommendationsService \
     SecondScreenSetup \
     SecondScreenSetupAuthBridge \
     SetupWraith \
     talkback \
+    Tubesky \
     TV \
-    TvVoiceInput \
     VideosPano \
     WebViewGoogle \
-    YouTubeLeanback
+    YouTubeLeanback \
+    GoogleExtServices \
+    GoogleExtShared \
 
-# Overlay for Google network and fused location providers
-$(call inherit-product, device/sample/products/location_overlay.mk)
+
+
+# Overlay for GMS devices
+# $(call inherit-product, device/sample/products/backup_overlay.mk)
+# $(call inherit-product, device/sample/products/location_overlay.mk)
+PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_overlay \
+                            vendor/broadcom/prebuilts/gms/google/products/overlay
+
+# Whitelisted Backup Transports
+PRODUCT_COPY_FILES += \
+    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
 
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
-     ro.setupwizard.mode=OPTIONAL \
-     ro.com.google.gmsversion=5.1_r2
-
-# Disable building webviewchromium from source
-PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
-
-# GMS-specific webview overlay
-PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+    ro.setupwizard.mode=OPTIONAL \
+    ro.com.google.gmsversion=N_preview

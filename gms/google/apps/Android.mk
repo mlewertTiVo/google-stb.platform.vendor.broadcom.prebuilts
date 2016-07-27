@@ -26,7 +26,6 @@ LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/libcast_shell_android.so @lib/armeabi-v7a/libcast_media_1.0.so
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -38,7 +37,6 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_CERTIFICATE := platform
-LOCAL_REQUIRED_MODULES := libatv_uinputbridge
 LOCAL_PRIVILEGED_MODULE := true
 
 include $(BUILD_PREBUILT)
@@ -62,6 +60,19 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_CERTIFICATE := platform
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := GooglePackageInstaller
+LOCAL_SRC_FILES := GooglePackageInstaller.apk
+LOCAL_OVERRIDES_PACKAGES := PackageInstaller
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -136,14 +147,25 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := GoogleJapaneseInput-release-preinstall
-LOCAL_SRC_FILES := GoogleJapaneseInput-release-preinstall.apk
+LOCAL_MODULE := GoogleHindiIME
+LOCAL_SRC_FILES := GoogleHindiIME.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/libmozc.so
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := GoogleJapaneseInput
+LOCAL_SRC_FILES := GoogleJapaneseInput.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_TARGET_ARCH := arm
+LOCAL_CERTIFICATE := PRESIGNED
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -156,7 +178,6 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/liben_data_bundle_preload.so @lib/armeabi-v7a/libgnustl_shared.so @lib/armeabi-v7a/libjni_gesture_engine.so @lib/armeabi-v7a/libjni_hmm_shared_engine.so @lib/armeabi-v7a/libpinyin_data_bundle_preload.so
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -169,7 +190,6 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/liben_data_bundle_preload.so @lib/armeabi-v7a/libgnustl_shared.so @lib/armeabi-v7a/libjni_gesture_engine.so @lib/armeabi-v7a/libjni_hmm_shared_engine.so @lib/armeabi-v7a/libzhuyin_data_bundle_preload.so
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -205,8 +225,8 @@ LOCAL_OVERRIDES_PACKAGES := PicoTts
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/libpatts_engine_jni_api_neon_ub.210307121.so @lib/armeabi-v7a/libpatts_engine_jni_api_ub.210307121.so @lib/armeabi-v7a/libspeexwrapper_ub.210307121.so
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -220,7 +240,6 @@ LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/libgoogle_hotword_jni.so @lib/armeabi-v7a/libgoogle_recognizer_jni_l.so
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -243,7 +262,7 @@ LOCAL_SRC_FILES := LeanbackIme.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
 
 include $(BUILD_PREBUILT)
@@ -280,19 +299,6 @@ LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MULTILIB := both
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/libAppDataSearch.so @lib/armeabi-v7a/libNearbyApp.so @lib/armeabi-v7a/libWhisper.so @lib/armeabi-v7a/libconscrypt_gmscore_jni.so @lib/armeabi-v7a/libdirect-audio.so @lib/armeabi-v7a/libgcastv2_base.so @lib/armeabi-v7a/libgcastv2_support.so @lib/armeabi-v7a/libgms-ocrclient.so @lib/armeabi-v7a/libgmscore.so @lib/armeabi-v7a/libjgcastservice.so @lib/armeabi-v7a/libleveldbjni.so @lib/armeabi-v7a/libwearable-selector.so
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := PhoneskyKamikazeCanvas
-LOCAL_SRC_FILES := PhoneskyKamikazeCanvas.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PRIVILEGED_MODULE := true
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -303,9 +309,7 @@ LOCAL_SRC_FILES := PlayGamesPano.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/libgames_rtmp_jni.so
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -319,6 +323,18 @@ LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_REQUIRED_MODULES := libgoogle_tagger_aah_jni
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := RecommendationsService
+LOCAL_SRC_FILES := RecommendationsService.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -369,26 +385,25 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := TV
-LOCAL_SRC_FILES := TV.apk
+LOCAL_MODULE := Tubesky
+LOCAL_SRC_FILES := Tubesky.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/libusbtuner_jni.so
 
 include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := TvVoiceInput
-LOCAL_SRC_FILES := TvVoiceInput.apk
+LOCAL_MODULE := TV
+LOCAL_SRC_FILES := TV.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -413,7 +428,6 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MULTILIB := both
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi-v7a/libwebviewchromium.so
 LOCAL_REQUIRED_MODULES := libwebviewchromium_plat_support libwebviewchromium_loader
 
 include $(BUILD_PREBUILT)
@@ -427,6 +441,30 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PREBUILT_JNI_LIBS := @lib/armeabi/libcronet.so @lib/armeabi/libm2ts_player.so @lib/armeabi/libvpx.so @lib/armeabi/libvpxJNI.so
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := GoogleExtServices
+LOCAL_SRC_FILES := GoogleExtServices.apk
+LOCAL_OVERRIDES_PACKAGES := ExtServices
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := GoogleExtShared
+LOCAL_SRC_FILES := GoogleExtShared.apk
+LOCAL_OVERRIDES_PACKAGES := ExtShared
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := PRESIGNED
 
 include $(BUILD_PREBUILT)

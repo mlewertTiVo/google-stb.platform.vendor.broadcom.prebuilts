@@ -18,15 +18,6 @@ LOCAL_PATH := $(my-dir)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := libatv_uinputbridge
-LOCAL_SRC_FILES := arm/libatv_uinputbridge.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
 LOCAL_MODULE := libgoogle_tagger_aah_jni
 LOCAL_SRC_FILES := arm/libgoogle_tagger_aah_jni.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
