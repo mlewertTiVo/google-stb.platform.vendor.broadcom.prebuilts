@@ -56,18 +56,17 @@ PRODUCT_PACKAGES := \
     GoogleExtShared \
 
 
+# Configuration files for GMS apps
+PRODUCT_COPY_FILES := \
+    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
 
 # Overlay for GMS devices
-# $(call inherit-product, device/sample/products/backup_overlay.mk)
-# $(call inherit-product, device/sample/products/location_overlay.mk)
-PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_overlay \
+#$(call inherit-product, device/sample/products/backup_overlay.mk)
+#$(call inherit-product, device/sample/products/location_overlay.mk)
+PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/products/gms_overlay \
                             vendor/broadcom/prebuilts/gms/google/products/overlay
-
-# Whitelisted Backup Transports
-PRODUCT_COPY_FILES += \
-    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
 
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.mode=OPTIONAL \
-    ro.com.google.gmsversion=N_preview
+    ro.com.google.gmsversion=N_preview2
