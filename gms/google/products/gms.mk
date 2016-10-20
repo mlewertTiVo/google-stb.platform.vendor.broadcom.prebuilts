@@ -61,10 +61,9 @@ PRODUCT_COPY_FILES := \
     vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
 
 # Overlay for GMS devices
-#$(call inherit-product, device/sample/products/backup_overlay.mk)
-#$(call inherit-product, device/sample/products/location_overlay.mk)
-PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/products/gms_overlay \
-                            vendor/broadcom/prebuilts/gms/google/products/overlay
+$(call inherit-product, device/sample/products/backup_overlay.mk)
+$(call inherit-product, device/sample/products/location_overlay.mk)
+PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_overlay
 
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
