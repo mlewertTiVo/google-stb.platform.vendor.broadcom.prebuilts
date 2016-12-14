@@ -18,6 +18,7 @@ PRODUCT_PACKAGES := \
     AndroidMediaShell \
     AtvRemoteService \
     Backdrop \
+    BugReportSender \
     CanvasPackageInstaller \
     GooglePackageInstaller \
     FrameworkPackageStubs \
@@ -34,6 +35,7 @@ PRODUCT_PACKAGES := \
     GoogleServicesFramework \
     GoogleTTS \
     Katniss \
+    KoreanIME \
     LeanbackLauncher \
     LeanbackIme \
     Music2Pano \
