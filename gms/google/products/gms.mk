@@ -70,4 +70,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_ov
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.mode=OPTIONAL \
-    ro.com.google.gmsversion=N_preview_3
+    ro.com.google.gmsversion=2016_14_3559006
