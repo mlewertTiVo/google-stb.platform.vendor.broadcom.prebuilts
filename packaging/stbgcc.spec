@@ -3,7 +3,7 @@ BuildRequires: -rpmlint-mini -rpmlint-tizen
 
 Name:       stbgcc
 Summary:    STB gcc cross-compiler
-Version:    4.8.1.5
+Version:    4.8.1.6
 Release:    0
 Group:      Development/Toolchain
 License:    GPL-3.0
@@ -12,7 +12,7 @@ Source0:    %{name}-%{version}.tar.gz
 ExclusiveArch: x86_64
 
 %description
-This is the prebuilt armv7 cross compiler for STB.
+This is the prebuilt armv7|armv8 cross compiler for STB.
 
 %prep
 %setup -q
