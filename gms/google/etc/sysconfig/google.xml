@@ -29,6 +29,9 @@
     <!-- If the volta app is pre-installed (for monitoring power use), let it do checkins. -->
     <allow-in-power-save package="com.google.android.volta" />
 
+    <allow-in-power-save package="com.google.android.ims" />
+    <allow-in-data-usage-save package="com.google.android.ims" />
+
     <!-- These Google applications all handle URLs to their websites by default -->
 
     <!-- Apps below are required on all GMS devices -->
@@ -44,11 +47,16 @@
     <app-link package="com.google.android.apps.docs.editors.sheets" />
     <app-link package="com.google.android.apps.docs.editors.slides" />
     <app-link package="com.google.android.apps.docs.editors.docs" />
+    <app-link package="com.google.android.music" />
+    <app-link package="com.google.android.videos" />
+    <app-link package="com.google.android.apps.photos" />
+    <app-link package="com.google.android.calendar" />
 
     <!-- These are the packages that are white-listed to be able to run as system user -->
     <system-user-whitelisted-app package="com.android.vending" />
     <system-user-whitelisted-app package="com.google.android.gms" />
     <system-user-whitelisted-app package="com.google.android.play.games" />
+    <system-user-whitelisted-app package="com.google.android.gms.policy_auth" />
 
     <!-- These are the packages that are uninstalled for system user -->
     <!-- Apps below are required on all GMS devices -->
