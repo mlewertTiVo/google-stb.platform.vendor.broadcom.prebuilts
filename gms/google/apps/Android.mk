@@ -31,6 +31,19 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
+LOCAL_MODULE := AndroidPlatformServicesTV
+LOCAL_SRC_FILES := AndroidPlatformServicesTV.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_TARGET_ARCH := arm
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
 LOCAL_MODULE := AtvRemoteService
 LOCAL_SRC_FILES := AtvRemoteService.apk
 LOCAL_MODULE_CLASS := APPS
@@ -56,17 +69,6 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := BugReportSender
 LOCAL_SRC_FILES := BugReportSender.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_CERTIFICATE := platform
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := CanvasPackageInstaller
-LOCAL_SRC_FILES := CanvasPackageInstaller.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
@@ -268,20 +270,21 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := LeanbackLauncher
-LOCAL_SRC_FILES := LeanbackLauncher.apk
+LOCAL_MODULE := LatinIMEGoogleTvPrebuilt
+LOCAL_SRC_FILES := LatinIMEGoogleTvPrebuilt.apk
+LOCAL_OVERRIDES_PACKAGES := LatinIME
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PRIVILEGED_MODULE := true
 
 include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := LeanbackIme
-LOCAL_SRC_FILES := LeanbackIme.apk
+LOCAL_MODULE := LeanbackLauncher
+LOCAL_SRC_FILES := LeanbackLauncher.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
@@ -422,6 +425,42 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := TV
 LOCAL_SRC_FILES := TV.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := TVLauncher
+LOCAL_SRC_FILES := TVLauncher.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := TVRecommendations
+LOCAL_SRC_FILES := TVRecommendations.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := TvTutorials
+LOCAL_SRC_FILES := TvTutorials.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
