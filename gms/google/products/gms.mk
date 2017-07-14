@@ -16,10 +16,10 @@
 
 PRODUCT_PACKAGES := \
     AndroidMediaShell \
+    AndroidPlatformServicesTV \
     AtvRemoteService \
     Backdrop \
     BugReportSender \
-    CanvasPackageInstaller \
     GooglePackageInstaller \
     FrameworkPackageStubs \
     GoogleBackupTransport \
@@ -36,10 +36,9 @@ PRODUCT_PACKAGES := \
     GoogleTTS \
     Katniss \
     KoreanIME \
+    LatinIMEGoogleTvPrebuilt \
     LeanbackLauncher \
-    LeanbackIme \
     Music2Pano \
-    NetworkLocationProvider \
     NoTouchAuthDelegate \
     PrebuiltGmsCorePano \
     PlayGamesPano \
@@ -51,6 +50,9 @@ PRODUCT_PACKAGES := \
     talkback \
     Tubesky \
     TV \
+    TVLauncher \
+    TVRecommendations \
+    TvTutorials \
     VideosPano \
     WebViewGoogle \
     YouTubeLeanback \
@@ -70,4 +72,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_ov
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.mode=OPTIONAL \
-    ro.com.google.gmsversion=2016_14_3559006
+    ro.com.google.gmsversion=N_preview
