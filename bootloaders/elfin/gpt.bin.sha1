@@ -1,0 +1,7 @@
+# This file contains a history of sha1 hashes of the gpt.bin
+# file. The version string must equal the version reported by
+# fastboot for the matching bootloader.
+# When the .img file is updated, you must add its
+# hash and the version number it reports to this file.
+
+e6c14f11041bc4d71bd3a3406368747871f16ef6  v1.30-190-g043ea43
