@@ -68,6 +68,7 @@ PRODUCT_COPY_FILES := \
 $(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/sample/products/location_overlay.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/overlay
 
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
