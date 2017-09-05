@@ -39,7 +39,6 @@ PRODUCT_PACKAGES := \
     LeanbackLauncher \
     LeanbackIme \
     Music2Pano \
-    NetworkLocationProvider \
     NoTouchAuthDelegate \
     PrebuiltGmsCorePano \
     PlayGamesPano \
@@ -60,7 +59,7 @@ PRODUCT_PACKAGES := \
 
 # Configuration files for GMS apps
 PRODUCT_COPY_FILES := \
-    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
+    vendor/broadcom/prebuilts/gms/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
 
 # Overlay for GMS devices
 $(call inherit-product, device/sample/products/backup_overlay.mk)
@@ -71,4 +70,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/overla
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.mode=OPTIONAL \
-    ro.com.google.gmsversion=2016_14_3559006
+    ro.com.google.gmsversion=N_Q2_2017
