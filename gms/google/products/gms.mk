@@ -59,7 +59,7 @@ PRODUCT_PACKAGES := \
 
 # Configuration files for GMS apps
 PRODUCT_COPY_FILES := \
-    vendor/broadcom/prebuilts/gms/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
+    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
 
 # Overlay for GMS devices
 $(call inherit-product, device/sample/products/backup_overlay.mk)
