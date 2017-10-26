@@ -39,12 +39,15 @@
 
     <privapp-permissions package="com.google.android.katniss">
         <permission name="android.permission.BIND_APPWIDGET"/>
+        <permission name="android.permission.BIND_TV_REMOTE_SERVICE"/>
         <permission name="android.permission.CAPTURE_AUDIO_HOTWORD"/>
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
         <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
         <permission name="android.permission.GLOBAL_SEARCH"/>
+        <permission name="android.permission.HDMI_CEC"/>
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
         <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
         <permission name="android.permission.STATUS_BAR"/>
         <permission name="android.permission.STOP_APP_SWITCHES"/>
     </privapp-permissions>
@@ -69,8 +72,10 @@
 
     <privapp-permissions package="com.google.android.tvlauncher">
         <permission name="android.permission.BIND_APPWIDGET"/>
+        <permission name="android.permission.CHANGE_HDMI_CEC_ACTIVE_SOURCE"/>
         <permission name="android.permission.MEDIA_CONTENT_CONTROL" />
         <permission name="android.permission.NOTIFY_TV_INPUTS" />
+        <permission name="android.permission.READ_CONTENT_RATING_SYSTEMS" />
         <permission name="com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA" />
     </privapp-permissions>
 
@@ -78,6 +83,7 @@
         <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
         <permission name="android.permission.MEDIA_CONTENT_CONTROL" />
         <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.RECEIVE_MEDIA_RESOURCE_USAGE" />
         <permission name="android.permission.WRITE_SECURE_SETTINGS" />
         <permission name="com.android.providers.tv.permission.ACCESS_ALL_EPG_DATA" />
     </privapp-permissions>
