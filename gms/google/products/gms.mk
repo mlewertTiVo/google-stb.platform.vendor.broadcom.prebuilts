@@ -66,14 +66,11 @@ PRODUCT_COPY_FILES := \
     vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
     vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-atv.xml:system/etc/permissions/privapp-permissions-atv.xml
 
-# Add gms_tv specific overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_tv_overlay
-
 # Overlay for GMS devices
 $(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/sample/products/location_overlay.mk)
+PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_tv_overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/overlay
 
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
