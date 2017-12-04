@@ -1,0 +1,6 @@
+# This file contains a history of sha1 hashes of the bootloader.prod.img
+# file. The version string must equal the version reported by
+# fastboot. When the .img file is updated, you must add its
+# hash and the version number it reports to this file.
+
+813e698cc71b2a9a41d6ea46f47f1ca6d5d53126  v1.34-222-g4feae7e
