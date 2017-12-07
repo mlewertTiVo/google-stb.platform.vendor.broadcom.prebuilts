@@ -74,5 +74,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/overla
 
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.setupwizard.mode=OPTIONAL \
     ro.com.google.gmsversion=GTVS_0_Q3_2017
