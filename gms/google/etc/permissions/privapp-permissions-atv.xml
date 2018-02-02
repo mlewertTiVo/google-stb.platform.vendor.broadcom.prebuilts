@@ -114,6 +114,7 @@
         <permission name="android.permission.DVB_DEVICE"/>
         <permission name="android.permission.GLOBAL_SEARCH"/>
         <permission name="android.permission.MODIFY_PARENTAL_CONTROLS"/>
+        <permission name="android.permission.READ_CONTENT_RATING_SYSTEMS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.tv.remote.service">
