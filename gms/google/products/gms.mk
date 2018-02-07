@@ -18,6 +18,7 @@ PRODUCT_PACKAGES := \
     AndroidMediaShell \
     AtvRemoteService \
     Backdrop \
+    BtRemoteControlService \
     BugReportSender \
     GooglePackageInstaller \
     FrameworkPackageStubs \

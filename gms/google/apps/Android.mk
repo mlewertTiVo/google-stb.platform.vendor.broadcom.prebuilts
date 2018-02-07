@@ -67,6 +67,18 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
+LOCAL_MODULE := BtRemoteControlService
+LOCAL_SRC_FILES := BtRemoteControlService.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_PRIVILEGED_MODULE := true
+
+include $(BUILD_PREBUILT)
+##############################
+include $(CLEAR_VARS)
+
 LOCAL_MODULE := BugReportSender
 LOCAL_SRC_FILES := BugReportSender.apk
 LOCAL_MODULE_CLASS := APPS
