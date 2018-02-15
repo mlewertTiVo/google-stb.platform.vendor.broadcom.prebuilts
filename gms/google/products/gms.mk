@@ -16,6 +16,7 @@
 
 PRODUCT_PACKAGES := \
     AndroidMediaShell \
+    AndroidPlatformServicesTV \
     AtvRemoteService \
     Backdrop \
     BugReportSender \
