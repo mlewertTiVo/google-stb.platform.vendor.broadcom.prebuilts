@@ -63,9 +63,9 @@ PRODUCT_PACKAGES := \
 # Configuration files for GMS apps
 PRODUCT_COPY_FILES := \
     vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
-    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google_atv.xml:system/etc/sysconfig/google_atv.xml \
     vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-atv.xml:system/etc/permissions/privapp-permissions-atv.xml
+    vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-atv.xml:system/etc/permissions/privapp-permissions-atv.xml \
+    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google_atv.xml:system/etc/sysconfig/google_atv.xml
 
 # Overlay for GMS devices
 $(call inherit-product, device/sample/products/backup_overlay.mk)
@@ -76,5 +76,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_ov
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.mode=OPTIONAL \
-    ro.com.google.gmsversion=GTVS_0_Jan_2018
-
+    ro.com.google.gmsversion=GTVS_0_Feb_2018
