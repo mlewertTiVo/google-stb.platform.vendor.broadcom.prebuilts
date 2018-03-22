@@ -66,7 +66,8 @@ PRODUCT_COPY_FILES := \
     vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
     vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google_atv.xml:system/etc/sysconfig/google_atv.xml \
     vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-atv.xml:system/etc/permissions/privapp-permissions-atv.xml
+    vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-atv.xml:system/etc/permissions/privapp-permissions-atv.xml \
+    vendor/google/data/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 
 
 # Overlay for GMS devices
