@@ -70,8 +70,10 @@ PRODUCT_COPY_FILES := \
 ifneq ($(wildcard vendor/google/data),)
 PRODUCT_COPY_FILES += \
     vendor/google/data/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
+else
+PRODUCT_COPY_FILES += \
+    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 endif
-
 
 # Overlay for GMS devices
 $(call inherit-product, device/sample/products/backup_overlay.mk)
