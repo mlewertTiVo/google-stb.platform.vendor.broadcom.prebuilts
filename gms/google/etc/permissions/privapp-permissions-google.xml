@@ -77,7 +77,6 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.SEND_SMS_NO_CONFIRMATION"/>
         <permission name="android.permission.SET_PREFERRED_APPLICATIONS"/>
         <permission name="android.permission.STATUS_BAR"/>
-        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
@@ -132,7 +131,6 @@ It allows additional grants on top of privapp-permissions-platform.xml
     <privapp-permissions package="com.google.android.backuptransport">
         <permission name="android.permission.BACKUP"/>
         <permission name="android.permission.MODIFY_NETWORK_ACCOUNTING"/>
-        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.carrier">
