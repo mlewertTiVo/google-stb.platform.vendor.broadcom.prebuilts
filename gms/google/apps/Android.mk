@@ -234,7 +234,6 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := GoogleTTS
 LOCAL_SRC_FILES := GoogleTTS.apk
-LOCAL_OVERRIDES_PACKAGES := PicoTts
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
@@ -306,18 +305,6 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := NoTouchAuthDelegate
-LOCAL_SRC_FILES := NoTouchAuthDelegate.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PRIVILEGED_MODULE := true
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
 LOCAL_MODULE := PrebuiltGmsCorePano
 LOCAL_SRC_FILES := PrebuiltGmsCorePano.apk
 LOCAL_MODULE_CLASS := APPS
@@ -367,17 +354,6 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := SecondScreenSetup
-LOCAL_SRC_FILES := SecondScreenSetup.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_CERTIFICATE := PRESIGNED
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
 LOCAL_MODULE := SecondScreenSetupAuthBridge
 LOCAL_SRC_FILES := SecondScreenSetupAuthBridge.apk
 LOCAL_MODULE_CLASS := APPS
@@ -394,7 +370,7 @@ LOCAL_SRC_FILES := SetupWraith.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
 
 include $(BUILD_PREBUILT)

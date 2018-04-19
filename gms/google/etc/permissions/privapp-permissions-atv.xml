@@ -80,7 +80,9 @@
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.tvrecommendations">
+        <permission name="android.permission.DELETE_PACKAGES" />
         <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
         <permission name="android.permission.MEDIA_CONTENT_CONTROL" />
         <permission name="android.permission.REAL_GET_TASKS" />
         <permission name="android.permission.RECEIVE_MEDIA_RESOURCE_USAGE" />
@@ -108,12 +110,16 @@
         <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
         <permission name="android.permission.WRITE_DREAM_STATE"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.BIND_TV_REMOTE_SERVICE"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.tv">
+        <permission name="android.permission.CHANGE_HDMI_CEC_ACTIVE_SOURCE"/>
         <permission name="android.permission.DVB_DEVICE"/>
         <permission name="android.permission.GLOBAL_SEARCH"/>
+        <permission name="android.permission.HDMI_CEC"/>
         <permission name="android.permission.MODIFY_PARENTAL_CONTROLS"/>
+        <permission name="android.permission.READ_CONTENT_RATING_SYSTEMS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.tv.remote.service">
@@ -125,9 +131,11 @@
         <permission name="android.permission.HDMI_CEC"/>
         <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.READ_DREAM_STATE" />
         <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
         <permission name="android.permission.READ_LOGS"/>
         <permission name="android.permission.TV_VIRTUAL_REMOTE_CONTROLLER"/>
+        <permission name="android.permission.WRITE_DREAM_STATE" />
         <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
