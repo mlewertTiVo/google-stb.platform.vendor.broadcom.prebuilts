@@ -96,6 +96,7 @@
 
     <privapp-permissions package="com.google.android.tungsten.setupwraith">
         <permission name="android.permission.BACKUP"/>
+        <permission name="android.permission.BIND_TV_REMOTE_SERVICE" />
         <permission name="android.permission.BIND_WALLPAPER"/>
         <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
