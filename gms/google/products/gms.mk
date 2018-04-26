@@ -39,12 +39,10 @@ PRODUCT_PACKAGES := \
     LatinIMEGoogleTvPrebuilt \
     LeanbackLauncher \
     Music2Pano \
-    NoTouchAuthDelegate \
     PrebuiltGmsCorePano \
     PlayGamesPano \
     Pumpkin \
     RecommendationsService \
-    SecondScreenSetup \
     SecondScreenSetupAuthBridge \
     SetupWraith \
     talkback \
@@ -85,5 +83,5 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/google_athome/overlay
 endif
 
 # Overrides
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.gmsversion=O_release
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.com.google.gmsversion=P_preview
