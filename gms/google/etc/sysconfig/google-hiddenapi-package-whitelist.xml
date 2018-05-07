@@ -68,6 +68,7 @@ This XML file declares which platform apps that need to access internal APIs.
   <hidden-api-whitelisted-app package="com.google.android.connectivitymonitor" />
   <hidden-api-whitelisted-app package="com.google.android.edu.harnesssettings" />
   <hidden-api-whitelisted-app package="com.google.android.ext.services" />
+  <hidden-api-whitelisted-app package="com.google.android.factoryota" />
   <hidden-api-whitelisted-app package="com.google.android.feedback" />
   <hidden-api-whitelisted-app package="com.google.android.gsf" />
   <hidden-api-whitelisted-app package="com.google.android.hardwareinfo" />
