@@ -78,9 +78,6 @@ $(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/sample/products/location_overlay.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_tv_overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_overlay
-ifneq ($(wildcard vendor/google_athome/overlay),)
-PRODUCT_PACKAGE_OVERLAYS += vendor/google_athome/overlay
-endif
 
 # Overrides
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
