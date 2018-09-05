@@ -50,7 +50,6 @@ PRODUCT_PACKAGES := \
     TV \
     TVLauncher \
     TVRecommendations \
-    TvTutorials \
     VideosPano \
     WebViewGoogle \
     YouTubeLeanback \
@@ -81,4 +80,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_ov
 
 # Overrides
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.gmsversion=P_preview
+    ro.com.google.gmsversion=GTVS_P_Aug_2018
