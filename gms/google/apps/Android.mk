@@ -31,19 +31,6 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := AndroidPlatformServicesTV
-LOCAL_SRC_FILES := AndroidPlatformServicesTV.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_TARGET_ARCH := arm
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PRIVILEGED_MODULE := true
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
 LOCAL_MODULE := AtvRemoteService
 LOCAL_SRC_FILES := AtvRemoteService.apk
 LOCAL_MODULE_CLASS := APPS
