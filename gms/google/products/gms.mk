@@ -16,7 +16,6 @@
 
 PRODUCT_PACKAGES := \
     AndroidMediaShell \
-    AndroidPlatformServicesTV \
     AtvRemoteService \
     Backdrop \
     BugReportSender \
@@ -80,4 +79,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_ov
 
 # Overrides
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.gmsversion=GTVS_P_Sep_2018
+    ro.com.google.gmsversion=Android_9_Pie:
