@@ -42,8 +42,8 @@ PRODUCT_PACKAGES := \
     PlayGamesPano \
     Pumpkin \
     RecommendationsService \
-    SecondScreenSetupAuthBridge \
-    SetupWraith \
+    SssAuthbridgePrebuilt \
+    SetupWraithPrebuilt \
     talkback \
     Tubesky \
     TV \
