@@ -160,42 +160,6 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := GoogleJapaneseInput
-LOCAL_SRC_FILES := GoogleJapaneseInput.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_TARGET_ARCH := arm
-LOCAL_CERTIFICATE := PRESIGNED
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := GooglePinyinIME
-LOCAL_SRC_FILES := GooglePinyinIME.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_TARGET_ARCH := arm
-LOCAL_CERTIFICATE := PRESIGNED
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := GoogleZhuyinIME
-LOCAL_SRC_FILES := GoogleZhuyinIME.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_TARGET_ARCH := arm
-LOCAL_CERTIFICATE := PRESIGNED
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
 LOCAL_MODULE := GooglePartnerSetup
 LOCAL_SRC_FILES := GooglePartnerSetup.apk
 LOCAL_MODULE_CLASS := APPS
@@ -240,18 +204,6 @@ LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
-
-include $(BUILD_PREBUILT)
-##############################
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := KoreanIME
-LOCAL_SRC_FILES := KoreanIME.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_TARGET_ARCH := arm
-LOCAL_CERTIFICATE := PRESIGNED
 
 include $(BUILD_PREBUILT)
 ##############################
@@ -342,22 +294,25 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := SecondScreenSetupAuthBridge
-LOCAL_SRC_FILES := SecondScreenSetupAuthBridge.apk
+LOCAL_MODULE := PrebuiltSssAuthbridge
+LOCAL_SRC_FILES := PrebuiltSssAuthbridge.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
 
 include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := SetupWraith
-LOCAL_SRC_FILES := SetupWraith.apk
+LOCAL_MODULE := PrebuiltSetupWraith
+LOCAL_SRC_FILES := PrebuiltSetupWraith.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
 

@@ -27,14 +27,10 @@ PRODUCT_PACKAGES := \
     GoogleFeedback \
     GoogleOneTimeInitializer \
     GoogleHindiIME \
-    GoogleJapaneseInput \
-    GooglePinyinIME \
-    GoogleZhuyinIME \
     GooglePartnerSetup \
     GoogleServicesFramework \
     GoogleTTS \
     Katniss \
-    KoreanIME \
     LatinIMEGoogleTvPrebuilt \
     LeanbackLauncher \
     Music2Pano \
@@ -42,8 +38,8 @@ PRODUCT_PACKAGES := \
     PlayGamesPano \
     Pumpkin \
     RecommendationsService \
-    SssAuthbridgePrebuilt \
-    SetupWraithPrebuilt \
+    PrebuiltSssAuthbridge \
+    PrebuiltSetupWraith \
     talkback \
     Tubesky \
     TV \
@@ -59,17 +55,13 @@ PRODUCT_PACKAGES := \
 # Configuration files for GMS apps
 PRODUCT_COPY_FILES := \
     vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
-    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google_atv.xml:system/etc/sysconfig/google_atv.xml \
     vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-atv.xml:system/etc/permissions/privapp-permissions-atv.xml
-
-ifneq ($(wildcard vendor/google/data),)
-PRODUCT_COPY_FILES += \
-    vendor/google/data/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
-else
-PRODUCT_COPY_FILES += \
-    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
-endif
+    vendor/broadcom/prebuilts/gms/google/etc/permissions/privapp-permissions-atv.xml:system/etc/permissions/privapp-permissions-atv.xml \
+    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google_atv.xml:system/etc/sysconfig/google_atv.xml \
+    vendor/broadcom/prebuilts/gms/google/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
+    vendor/broadcom/prebuilts/gms/google/etc/virtual-remote/virtual-remote.idc:system/usr/idc/virtual-remote.idc \
+    vendor/broadcom/prebuilts/gms/google/etc/virtual-remote/virtual-remote.kl:system/usr/keylayout/virtual-remote.kl \
+    vendor/broadcom/prebuilts/gms/google/etc/virtual-remote/virtual-remote.kcm:system/usr/keychars/virtual-remote.kcm
 
 # Overlay for GMS devices
 $(call inherit-product, device/sample/products/backup_overlay.mk)
@@ -79,4 +71,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/broadcom/prebuilts/gms/google/products/gms_ov
 
 # Overrides
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.gmsversion=Android_9_Pie:
+    ro.com.google.gmsversion=Android_9_Pie
