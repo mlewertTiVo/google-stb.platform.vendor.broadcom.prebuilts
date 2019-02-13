@@ -294,7 +294,7 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := PrebuiltSssAuthbridge
+LOCAL_MODULE := SssAuthbridgePrebuilt
 LOCAL_SRC_FILES := PrebuiltSssAuthbridge.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
@@ -307,7 +307,7 @@ include $(BUILD_PREBUILT)
 ##############################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := PrebuiltSetupWraith
+LOCAL_MODULE := SetupWraithPrebuilt
 LOCAL_SRC_FILES := PrebuiltSetupWraith.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
